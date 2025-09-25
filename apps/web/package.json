@@ -1,0 +1,31 @@
+{
+   "name": "@hhbot/web",
+   "version": "0.0.1",
+   "private": true,
+   "type": "module",
+   "prettier": "@hhbot/prettier-config",
+   "scripts": {
+      "lint": "eslint .",
+      "dev": "vite",
+      "build": "vite build",
+      "preview": "vite preview",
+      "test": "vitest"
+   },
+   "dependencies": {
+      "@types/react": "^19.1.13",
+      "@types/react-dom": "^19.1.9",
+      "@vitejs/plugin-react-swc": "^4.1.0",
+      "react": "19.1.1",
+      "react-dom": "19.1.1",
+      "vite": "7.1.7"
+   },
+   "devDependencies": {
+      "@hhbot/eslint-config": "workspace:eslint-config",
+      "@hhbot/tsconfig": "workspace:*",
+      "@vitejs/plugin-react": "^5.0.3",
+      "eslint": "9.0.0",
+      "eslint-plugin-react": "^7.37.0",
+      "eslint-plugin-react-hooks": "^5.0.0",
+      "typescript": "^5.5.4"
+   }
+}

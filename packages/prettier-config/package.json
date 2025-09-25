@@ -1,0 +1,9 @@
+{
+  "name": "@hhbot/prettier-config",
+  "version": "0.0.1",
+  "main": "index.json",
+  "private": true,
+  "peerDependencies": {
+    "prettier": "^3.0.0"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "extends": "@hhbot/tsconfig/react.json",
+  "compilerOptions": {
+    "types": ["vite/client"],
+    "baseUrl": "./src",
+    "paths": {
+      "@/*": ["*"]
+    }
+  },
+  "include": ["src", "eslint.config.js", "vite.config.ts", "index.html"]
+}

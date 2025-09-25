@@ -1,0 +1,13 @@
+{
+   "name": "@hhbot/eslint-config",
+   "version": "0.0.1",
+   "type": "module",
+   "main": "eslint.config.mjs",
+   "private": true,
+   "peerDependencies": {
+      "eslint": "^9.0.0",
+      "eslint-config-prettier": "^9.0.0",
+      "eslint-plugin-import": "^2.30.0",
+      "typescript": "^5.0.0"
+   }
+}

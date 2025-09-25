@@ -1,0 +1,38 @@
+{
+  "name": "hhbot",
+  "version": "1.0.0",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "prepare": "husky install",
+    "lint": "eslint . --ext .ts,.tsx",
+    "typecheck": "tsc -b"
+  },
+  "prettier": "@hhbot/prettier-config",
+  "devDependencies": {
+    "@commitlint/cli": "19.8.1",
+    "@commitlint/config-conventional": "19.8.1",
+    "@eslint/js": "^9.36.0",
+    "@hhbot/eslint-config": "workspace:*",
+    "@hhbot/prettier-config": "workspace:*",
+    "@types/node": "^24.5.2",
+    "@typescript-eslint/eslint-plugin": "^8.44.1",
+    "@typescript-eslint/parser": "^8.44.1",
+    "@typescript-eslint/type-utils": "^8.44.1",
+    "@typescript-eslint/utils": "^8.44.1",
+    "eslint": "9.36.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-import-resolver-typescript": "^4.4.4",
+    "eslint-plugin-import": "^2.32.0",
+    "eslint-plugin-react": "^7.37.5",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "eslint-plugin-simple-import-sort": "^12.1.1",
+    "husky": "9.1.7",
+    "lint-staged": "16.2.0",
+    "prettier": "3.6.2",
+    "typescript": "5.9.2",
+    "typescript-eslint": "^8.44.1"
+  }
+}
