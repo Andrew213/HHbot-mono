@@ -1,4 +1,0 @@
-{
-  "extends": "@hhbot/tsconfig/node.json",
-  "include": ["src", "eslint.config.js"]
-}

@@ -39,6 +39,16 @@ export default [
                allowTaggedTemplates: true,
             },
          ],
+         "@typescript-eslint/no-unused-vars": [
+            "error", // уровень предупреждения
+            {
+               vars: "all",
+               args: "after-used",
+               ignoreRestSiblings: true,
+               argsIgnorePattern: "^_", // аргументы с _ не будут ошибкой
+               varsIgnorePattern: "^_", // переменные с _ не будут ошибкой
+            },
+         ],
       },
    },
 
