@@ -1,27 +1,23 @@
-// import {Module} from "@nestjs/common";
-
-// import {HealthController} from "./health.controller";
-
-// @Module({
-//    controllers: [HealthController],
-// })
-// export class AppModule {}
-
 import {Module} from "@nestjs/common";
-import {DevtoolsModule} from "@nestjs/devtools-integration";
+import {TypeOrmModule} from "@nestjs/typeorm";
 
-import {ConfigModule} from "./config/config.module";
-import {PostsModule} from "./posts/posts.module";
-import {PostsEditingModule} from "./posts-editing/posts-editing.module";
-import {UsersModule} from "./user/users.module";
+import {Student} from "./students/entities/student.entity";
+import {StudentsModule} from "./students/students.module";
 
 @Module({
    imports: [
-      DevtoolsModule.register({http: true, port: 8000}),
-      ConfigModule,
-      UsersModule,
-      PostsModule,
-      PostsEditingModule,
+      TypeOrmModule.forRoot({
+         type: "postgres",
+         host: "localhost",
+         port: 5432,
+         username: "student",
+         password: "student",
+         database: "nest_project",
+         schema: "nest_project",
+         entities: [Student],
+         synchronize: true,
+      }),
+      StudentsModule,
    ],
    controllers: [],
    providers: [],

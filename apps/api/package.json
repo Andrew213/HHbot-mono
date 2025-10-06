@@ -14,8 +14,10 @@
       "@hhbot/tsconfig": "workspace:*",
       "@nestjs/core": "^11.1.6",
       "@nestjs/platform-express": "^11.1.6",
+      "@types/cheerio": "^1.0.0",
       "@types/jest": "^30.0.0",
       "@types/node": "^24.5.2",
+      "cheerio": "^1.1.2",
       "eslint": "9.0.0",
       "jest": "^30.2.0",
       "ts-jest": "^29.4.4",
@@ -23,11 +25,18 @@
       "typescript": "^5.9.2"
    },
    "dependencies": {
+      "@nestjs/axios": "^4.0.1",
       "@nestjs/common": "^11.1.6",
+      "@nestjs/config": "^4.0.2",
       "@nestjs/devtools-integration": "^0.2.1",
       "@nestjs/mapped-types": "^2.1.0",
+      "@nestjs/typeorm": "^11.0.0",
+      "axios": "^1.12.2",
+      "axios-retry": "^4.5.0",
       "class-transformer": "^0.5.1",
       "class-validator": "^0.14.2",
-      "reflect-metadata": "^0.2.2"
+      "pg": "^8.16.3",
+      "reflect-metadata": "^0.2.2",
+      "typeorm": "~0.3.27"
    }
 }

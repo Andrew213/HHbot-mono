@@ -8,14 +8,10 @@ import {AppModule} from "./app.module";
 async function bootstrap() {
    const app = await NestFactory.create(AppModule);
 
-   app.setGlobalPrefix("api");
-
-   app.useGlobalPipes(new ValidationPipe());
+   app.useGlobalPipes(new ValidationPipe({whitelist: true, transform: true}));
 
    await app.listen(process.env.PORT ? Number(process.env.PORT) : 4000);
 
-   console.log(
-      `[api] running at http://127.0.0.1:${process.env.PORT || 4000}/api/health`,
-   );
+   console.log(`[api] running at http://127.0.0.1:${process.env.PORT || 4000}`);
 }
 bootstrap();

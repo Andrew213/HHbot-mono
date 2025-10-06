@@ -14,7 +14,9 @@ import {UsersService} from "./users.service";
 
 @Controller("users")
 export class UsersController {
-   constructor(private readonly usersService: UsersService) {}
+   constructor(private readonly usersService: UsersService) {
+      console.log(`user service is `, !!usersService);
+   }
 
    @Post()
    create(@Body() createUserDto: CreateUserDto) {
@@ -23,7 +25,7 @@ export class UsersController {
 
    @Get()
    findAll() {
-      return this.usersService.findAll();
+      return {a: "test"};
    }
 
    @Get(":id")
